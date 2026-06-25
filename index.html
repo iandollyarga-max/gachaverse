@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+  <title>GachaVerse ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="app">
+  <header class="app-header">
+    <div class="header-title">✨ GachaVerse</div>
+    <div class="header-stats">
+      <span class="stat-chip coins">💰 <span id="stat-coins">0</span></span>
+      <span class="stat-chip tickets">🎫 <span id="stat-tickets">0</span></span>
+    </div>
+  </header>
+  <main id="main-content" class="main-content"></main>
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="home"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+    <button class="nav-btn" data-tab="gacha"><span class="nav-icon">🎰</span><span class="nav-label">Gacha</span></button>
+    <button class="nav-btn" data-tab="collection"><span class="nav-icon">👥</span><span class="nav-label">Collection</span></button>
+    <button class="nav-btn" data-tab="work"><span class="nav-icon">💼</span><span class="nav-label">Work</span></button>
+    <button class="nav-btn" data-tab="bond"><span class="nav-icon">💝</span><span class="nav-label">Bond</span></button>
+  </nav>
+  <div id="gacha-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content gacha-result">
+      <div id="gacha-result-content"></div>
+      <button id="gacha-modal-close" class="btn btn-primary" style="margin-top:12px">Awesome! ✨</button>
+    </div>
+  </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+<script src="js/gacha.js"></script>
+<script src="js/interact.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
